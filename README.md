@@ -11,23 +11,23 @@ ONE LIFE: Echo Protocol is a 2D dark-fantasy action-platformer inspired by the a
 2D Dark-Fantasy Action-Platformer
 
 
-![alt text](image.png)
+![Godot Project](screenshots/01-godot-project.png)
 Project Creation: The Echo mini-game project was created using Godot 4. The project was created as the foundation for the game's development.
 
-![alt text](image-1.png)
+![Scene Setup](screenshots/02-scene-setup.png)
 A Node2D was created as the root node of the main scene, with a Sprite2D child added as the initial visual placeholder.
 
-![alt text](image.png)
+![Running Game](screenshots/03-running-game.png)
 Project Testing: The project was launched successfully from Godot to verify that the main scene and project configuration were functioning correctly.
 
-![alt text](image-1.png)
+![Project Files](screenshots/04-project-files.png)
 Project Files: The project directory contains the Godot project files, .gitignore, .gitattributes, and README documentation required for version control and project documentation.
 
-![alt text](image-2.png)
+![Git LFS Setup](screenshots/05-git-lfs.png)
 Git LFS Configuration: Git Large File Storage was initialized and configured to track PNG image and WAV audio assets, allowing large game-development files to be handled appropriately by Git.
 
-![alt text](image-4.png)
+![Git Commit](screenshots/06-git-commit.png)
 Initial Commit: The completed Week 1 project setup was committed to the local Git repository using the commit message Week 1: project setup + Hello World.
 
-![alt text](image-5.png)
+![Git Push](screenshots/07-git-push.png)
 GitHub Synchronization: The local main branch was successfully pushed to the GitHub repository, establishing the remote repository for the project.
