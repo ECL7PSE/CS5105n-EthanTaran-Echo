@@ -1,9 +1,40 @@
 [gd_scene format=3 uid="uid://cn0mdw3ju0ns3"]
 
-[ext_resource type="Texture2D" uid="uid://dydkraoh7nrgf" path="res://icon.svg" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://cw238re3axht2" path="res://character_body_2d.gd" id="1_uu6xs"]
+[ext_resource type="Texture2D" uid="uid://dx6782j1bgs12" path="res://Assets/Player/Dark_Hatman_Topdown_Character/Animations/Idle/darkhatman_idle_sheet_64x64.png" id="2_cm0pq"]
+[ext_resource type="Texture2D" uid="uid://r3mfl87klbtp" path="res://Assets/Player/Dark_Hatman_Topdown_Character/Animations/AttackEffect/attackeffect_sheet_64x64t.png" id="3_slasheffect"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0du0"]
+size = Vector2(43, 67)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jsssl"]
+radius = 17.20465
 
 [node name="Node2D" type="Node2D" unique_id=1683347893]
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1299246218]
-position = Vector2(544, 235)
-texture = ExtResource("1_glv2v")
+[node name="Player(CharacterBody2D)" type="CharacterBody2D" parent="." unique_id=516819201]
+position = Vector2(544, 231)
+script = ExtResource("1_uu6xs")
+
+[node name="Icon(Sprite2D)" type="Sprite2D" parent="Player(CharacterBody2D)" unique_id=1547948264]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_cm0pq")
+hframes = 4
+vframes = 4
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player(CharacterBody2D)" unique_id=747321297]
+shape = SubResource("RectangleShape2D_r0du0")
+
+[node name="AttackArea(Area2D)" type="Area2D" parent="Player(CharacterBody2D)" unique_id=1626346518]
+position = Vector2(0, 18)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player(CharacterBody2D)/AttackArea(Area2D)" unique_id=1017694545]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_jsssl")
+
+[node name="SlashEffect(Sprite2D)" type="Sprite2D" parent="Player(CharacterBody2D)/AttackArea(Area2D)" unique_id=2001122333]
+visible = false
+texture = ExtResource("3_slasheffect")
+hframes = 4
+vframes = 3
