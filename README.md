@@ -72,5 +72,13 @@ Testing Movement: Movement was somewhat smooth and the walking animation is flui
 Testing Attack: Attack animations was implemented into the 4 directions depending to where the Sprite is looking, a simple animation of the Sprite was added during the slash and a custom pixelated effects at the slash was added.  
 
 
+## Activity 3 — Level Design
+
+
+
+https://github.com/user-attachments/assets/89ced82c-cbf8-4e94-ac13-98b43f25d974
+
+I beta level who although has some bugs i ignore it for now since i want to showcase the progression and the purpose of the game. Before i added enemies i added chest, vases and jars which would soon be filled with loot. you can interact all of them its either you break them or you open. I created this level using sprites of chests and background miscellaneous and ofcoure assets I acquired online such as the tile map and the tile sheets.
+
 
 
