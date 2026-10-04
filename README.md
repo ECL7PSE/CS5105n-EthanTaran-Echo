@@ -169,4 +169,4 @@ https://github.com/user-attachments/assets/198a2819-933a-4868-b60e-a1d78d8c8e82
 ### Credits
 - RPG sounds by Kenney (kenney.nl), CC0.
 - Other effects from Freesound.
-- Background music: (add the source here)
+- Exploration | Chiptune RPG Adventure Theme by NickPanek
