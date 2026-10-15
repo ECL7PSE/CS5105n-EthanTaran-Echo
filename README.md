@@ -170,3 +170,44 @@ https://github.com/user-attachments/assets/198a2819-933a-4868-b60e-a1d78d8c8e82
 - RPG sounds by Kenney (kenney.nl), CC0.
 - Other effects from Freesound.
 - Exploration | Chiptune RPG Adventure Theme by NickPanek
+
+## Week 7: Enemy AI Improvements
+
+I improved the AI for my enemies so they react to the player instead of just moving in a fixed pattern.
+
+- **Behavior:** enemies patrol, detect the player when in range, chase, and attack
+- **State machine:** Patrol → Chase → Attack → Return to patrol
+- **Detection:** [Area2D detection radius / RayCast2D line of sight]
+- **Tuning:** adjusted speed, attack cooldown, and health so the difficulty feels fair
+- **Result:** enemies are more challenging and respond to the player's position
+
+## Week 8: Multi-Platform Export & Team Git
+
+### Exports
+| Platform | Status | Location |
+|----------|--------|----------|
+| Windows PC | Exported and tested | `builds/pc/` |
+| Web (HTML5) | Exported and tested | `builds/web/` |
+
+### Platform-specific tweak
+For the web build I set the stretch mode to `canvas_items` and the aspect to `keep` in Project Settings (Display → Window), so the game scales correctly in any browser window. [Optional: I also added a "Click to Start" screen because browsers block audio until the player interacts with the page.]
+
+### How to run
+- **PC:** open `builds/pc/[game name].exe`.
+- **Web:** run `python -m http.server` inside `builds/web/`, then open `http://localhost:8000` in a browser. Opening `index.html` directly will not work.
+
+### Team Git practice
+- Created a branch on the shared practice repo and opened a pull request
+- Deliberately created a merge conflict by editing the same line on two branches
+- Resolved the conflict by choosing the correct lines and removing the markers (`<<<<<<<`, `=======`, `>>>>>>>`)
+- Practice repo: [paste link]
+
+### Issues encountered
+- [e.g. export templates had to be installed first]
+- [e.g. web build needed a local server to run]
+
+### Showcase
+Presented the finished mini-game to the class. Feedback received: [one line].
+
+### Commit
+`Week 8: multi-platform export + team Git practice`
