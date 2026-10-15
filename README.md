@@ -203,11 +203,6 @@ For the web build I set the stretch mode to `canvas_items` and the aspect to `ke
 - Practice repo: [paste link]
 
 ### Issues encountered
-- [e.g. export templates had to be installed first]
-- [e.g. web build needed a local server to run]
-
-### Showcase
-Presented the finished mini-game to the class. Feedback received: [one line].
-
-### Commit
+- export templates had to be installed first.
+- e.g. web build needed a local server to run.
 `Week 8: multi-platform export + team Git practice`
